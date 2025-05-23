@@ -1,0 +1,15 @@
+#pragma once
+#include <QColor>
+#include <QFont>
+
+struct Theme {
+    QColor bg{0x2b, 0x2b, 0x2b};
+    QColor fg{0xf8, 0xf8, 0xf2};
+    QColor accent{0x66, 0xd9, 0xef};
+    QColor border{0x49, 0x49, 0x49};
+    QColor tab_bg{0x34, 0x34, 0x34};
+    QColor tree_bg{0x26, 0x26, 0x26};
+    QFont font{"Consolas", 10};
+    
+    static Theme& instance();
+};
